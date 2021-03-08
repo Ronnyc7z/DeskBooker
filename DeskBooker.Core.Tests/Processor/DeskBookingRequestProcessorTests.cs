@@ -22,9 +22,6 @@ namespace DeskBooker.Core.Tests.Processor
         [Fact]
         public void ShouldReturnDeskBookingResultWithRequestValues()
         {
-            //Arrange
-            
-
             //Act
             DeskBookingResult result = _processor.BookDesk(_request);
             //Assert
