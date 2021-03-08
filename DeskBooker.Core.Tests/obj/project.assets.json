@@ -901,6 +901,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "DeskBooker.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/DeskBooker.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DeskBooker.Core.dll": {}
+        }
       }
     }
   },
@@ -3461,10 +3471,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "DeskBooker.Core/1.0.0": {
+      "type": "project",
+      "path": "../DeskBooker.Core/DeskBooker.Core.csproj",
+      "msbuildProject": "../DeskBooker.Core/DeskBooker.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "DeskBooker.Core >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3507,7 +3523,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\ronny\\source\\repos\\DeskBooker\\DeskBooker.Core\\DeskBooker.Core.csproj": {
+              "projectPath": "c:\\Users\\ronny\\source\\repos\\DeskBooker\\DeskBooker.Core\\DeskBooker.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using DeskBooker.Core.Processor;
 using Xunit;
 
 namespace DeskBooker.Core.Tests.Processor
@@ -26,7 +25,6 @@ namespace DeskBooker.Core.Tests.Processor
 
             //Act
             DeskBookingResult result = _processor.BookDesk(request);
-
             //Assert
             Assert.NotNull(result);
             Assert.Equal(request.FirstName, result.FirstName);

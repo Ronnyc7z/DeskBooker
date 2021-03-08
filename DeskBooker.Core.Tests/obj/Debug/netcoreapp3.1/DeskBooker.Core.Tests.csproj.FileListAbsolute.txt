@@ -94,3 +94,5 @@ C:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\obj\Debug\netcoreap
 C:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\obj\Debug\netcoreapp3.1\DeskBooker.Core.Tests.pdb
 C:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\obj\Debug\netcoreapp3.1\DeskBooker.Core.Tests.genruntimeconfig.cache
 c:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\obj\Debug\netcoreapp3.1\DeskBooker.Core.Tests.csproj.CoreCompileInputs.cache
+C:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\bin\Debug\netcoreapp3.1\DeskBooker.Core.dll
+C:\Users\ronny\source\repos\DeskBooker\DeskBooker.Core.Tests\bin\Debug\netcoreapp3.1\DeskBooker.Core.pdb
