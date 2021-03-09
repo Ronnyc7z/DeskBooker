@@ -1,6 +1,6 @@
 using System;
 
-namespace DeskBooker.Core
+namespace DeskBooker.Core.Domain
 {
     public class DeskBookingBase
     {
