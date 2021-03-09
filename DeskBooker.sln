@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{20C6EF0C-357A-47F2-AE11-5E997F63D2AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core.Tests", "DeskBooker.Core.Tests\DeskBooker.Core.Tests.csproj", "{20C6EF0C-357A-47F2-AE11-5E997F63D2AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Core", "DeskBooker.Core\DeskBooker.Core.csproj", "{F3A8AD5B-577B-4586-9FF7-448733168C69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess", "DeskBooker.DataAccess\DeskBooker.DataAccess.csproj", "{1B75FE97-F4DA-4C57-80B0-5D865343B4FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess.Tests", "DeskBooker.DataAccess.Tests\DeskBooker.DataAccess.Tests.csproj", "{175F0701-A41C-45B2-A5F3-1CA38A4DF449}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{20C6EF0C-357A-47F2-AE11-5E997F63D2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20C6EF0C-357A-47F2-AE11-5E997F63D2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20C6EF0C-357A-47F2-AE11-5E997F63D2AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3A8AD5B-577B-4586-9FF7-448733168C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3A8AD5B-577B-4586-9FF7-448733168C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3A8AD5B-577B-4586-9FF7-448733168C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3A8AD5B-577B-4586-9FF7-448733168C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B75FE97-F4DA-4C57-80B0-5D865343B4FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B75FE97-F4DA-4C57-80B0-5D865343B4FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B75FE97-F4DA-4C57-80B0-5D865343B4FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B75FE97-F4DA-4C57-80B0-5D865343B4FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
