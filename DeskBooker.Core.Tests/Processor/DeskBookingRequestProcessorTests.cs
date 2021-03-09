@@ -1,5 +1,7 @@
 ﻿using System;
+using DeskBooker.Core.DataInterface;
 using DeskBooker.Core.Processor;
+using Moq;
 using Xunit;
 
 namespace DeskBooker.Core.Tests.Processor
@@ -7,6 +9,7 @@ namespace DeskBooker.Core.Tests.Processor
     public class DeskBookingRequestProcessorTests
     {
         private readonly DeskBookingRequest _request;
+        private readonly Mock<IDeskBookingRepository> _deskBookingRepositoryMock;
         private readonly DeskBookingRequestProcessor _processor;
         public DeskBookingRequestProcessorTests()
         {
@@ -17,7 +20,8 @@ namespace DeskBooker.Core.Tests.Processor
                 Email = "ronnyjcarrasquel@gmail.com",
                 Date = new DateTime(1995, 9, 9)
             };
-            _processor = new DeskBookingRequestProcessor();
+            _deskBookingRepositoryMock = new Mock<IDeskBookingRepository>();
+            _processor = new DeskBookingRequestProcessor(_deskBookingRepositoryMock.Object);
         }
         [Fact]
         public void ShouldReturnDeskBookingResultWithRequestValues()
@@ -37,6 +41,25 @@ namespace DeskBooker.Core.Tests.Processor
             var exception = Assert.Throws<ArgumentNullException>(() => _processor.BookDesk(null));
 
             Assert.Equal("request", exception.ParamName);            
+        }
+        [Fact]
+        public void ShouldSaveDeskBooking()
+        {
+            DeskBooking savedDeskBooking = null;
+            _deskBookingRepositoryMock.Setup(x=>x.Save(It.IsAny<DeskBooking>()))
+                .Callback<DeskBooking>(deskBooking=> {
+                    savedDeskBooking = deskBooking;
+                });
+                
+            _processor.BookDesk(_request);
+
+            _deskBookingRepositoryMock.Verify(x=>x.Save(It.IsAny<DeskBooking>()), Times.Once);
+
+            Assert.NotNull(savedDeskBooking);
+            Assert.Equal(_request.FirstName, savedDeskBooking.FirstName);
+            Assert.Equal(_request.LastName, savedDeskBooking.LastName);
+            Assert.Equal(_request.Email, savedDeskBooking.Email);
+            Assert.Equal(_request.Date, savedDeskBooking.Date);
         }
     }
 }
