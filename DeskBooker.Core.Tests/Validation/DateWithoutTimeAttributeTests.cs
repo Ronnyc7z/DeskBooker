@@ -26,7 +26,7 @@ namespace DeskBooker.Core.Tests.Validation
 		{
 			var attribute = new DateWithoutTimeAttribute();
 			string errorMessage = "Date must not contain time";
-
+            
 			Assert.Equal(attribute.ErrorMessage, errorMessage);
 		}
 	}
