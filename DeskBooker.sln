@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess", "De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.DataAccess.Tests", "DeskBooker.DataAccess.Tests\DeskBooker.DataAccess.Tests.csproj", "{175F0701-A41C-45B2-A5F3-1CA38A4DF449}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeskBooker.Web", "DeskBooker.Web\DeskBooker.Web.csproj", "{D4372361-BE86-4ABF-9948-548182CD13E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,14 @@ Global
 		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{175F0701-A41C-45B2-A5F3-1CA38A4DF449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E82B27-CE74-4C66-BF8D-F850CFC5E4C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E82B27-CE74-4C66-BF8D-F850CFC5E4C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E82B27-CE74-4C66-BF8D-F850CFC5E4C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E82B27-CE74-4C66-BF8D-F850CFC5E4C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4372361-BE86-4ABF-9948-548182CD13E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4372361-BE86-4ABF-9948-548182CD13E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4372361-BE86-4ABF-9948-548182CD13E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4372361-BE86-4ABF-9948-548182CD13E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
